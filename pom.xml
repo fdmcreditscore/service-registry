@@ -8,9 +8,10 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>cdd</groupId>
 	<artifactId>srvregistry</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>service-registry</name>
 	<description>Service Registration and Discovery</description>
 
