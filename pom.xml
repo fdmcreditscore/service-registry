@@ -10,9 +10,9 @@
 	</parent>
 	
 	<groupId>cdd</groupId>
-	<artifactId>srvregistry</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<name>service-registry</name>
+	<artifactId>adminregistry</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<name>admin-registry</name>
 	<description>Service Registration and Discovery</description>
 
 	<properties>
@@ -31,10 +31,14 @@
 			<groupId>de.codecentric</groupId>
 			<artifactId>spring-boot-admin-starter-server</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+<!--		<dependency>
+		    <groupId>de.codecentric</groupId>
+		    <artifactId>spring-boot-admin-server-ui-login</artifactId>
+    		<version>1.5.7</version>
+		</dependency>
+-->		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 		<dependency>
@@ -52,22 +56,22 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
+<!--			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-
-			<dependency>
+-->
+<!--			<dependency>
 				<groupId>de.codecentric</groupId>
 				<artifactId>spring-boot-admin-dependencies</artifactId>
 				<version>${spring-boot-admin.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-		</dependencies>
+-->		</dependencies>
 	</dependencyManagement>
 
 	<build>
